@@ -1,0 +1,33 @@
+# Node.js dependencies
+**/node_modules/
+
+# Generated Protocol Buffer files
+**/gen/
+
+# Proto source files (optional, but good to ignore if generated from outside)
+# backend/proto/
+# You might want to include proto files in version control if they are the source of truth,
+# but if they are treated as entirely generated or managed by `run.sh` then ignoring them is fine.
+# For this "Hello World" setup, where run.sh creates it, ignoring it is reasonable.
+
+# Next.js build output
+frontend/.next/
+
+# pnpm-specific files
+.pnpm-store/
+pnpm-lock.yaml
+
+# Runtime data
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db

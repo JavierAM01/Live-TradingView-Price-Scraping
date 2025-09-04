@@ -1,0 +1,53 @@
+.flexContainer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 50vh;
+  background-color: transparent;
+  padding: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+.tickerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 24rem;
+  padding: 1rem;
+  background-color: #fbfbfbff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-family: sans-serif;
+  margin-top: 0.5rem;
+}
+.tickerName {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #262626;
+  letter-spacing: 0.025em;
+}
+.tickerPriceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tickerPrice {
+  color: #737373;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.priceBold {
+  font-weight: bold;
+  color: black;
+}
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #888;
+    cursor: pointer;
+}
+.closeButton:hover {
+    color: #ff0000ff;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package app;
+
+message TestRequest {
+  string name = 1;
+}
+
+message TestResponse {
+  string message = 1;
+}
+
+message TickerRequest {
+  string ticker = 1;
+}
+
+message TickerResponse {
+  double price = 1;
+}
+
+service AppService {
+  rpc getHelloWorld(TestRequest) returns (TestResponse);
+  rpc getTradingViewPrice(TickerRequest) returns (TickerResponse);
+  rpc StreamPrice(TickerRequest) returns (stream TickerResponse);
+}
